@@ -1,35 +1,40 @@
-local colors = require("rynkai.colors.default")
+local defaults = require("rynkai.config").options
+local colors = require("rynkai.colors." .. defaults.theme)
+local C = require("rynkai.fn").set_schemes(colors)
 
 local M = {}
 
 M.normal = {
-	a = { fg = colors.bg5, bg = colors.accent6, gui = "bold" },
-	b = { fg = colors.fg1, bg = colors.fg5 },
-	c = { fg = colors.accent2, bg = colors.bg3 },
-	-- z = { fg = colors.accent6, bg = colors.bg2 },
+	a = { bg = C.base0A, fg = C.base00, gui = "bold" },
+	b = { bg = C.base00, fg = C.base0A },
+	c = { bg = C.base02, fg = C.base07 },
 }
 
 M.insert = {
-	a = { fg = colors.bg3, bg = colors.fello3, gui = "bold" },
-	-- b = {fg = colors.title, bg = colors.bg_alt},
-}
-
-M.visual = {
-	a = {fg = colors.bg5, bg = colors.sam3, gui = 'bold'},
-}
-
-M.replace = {
-	a = {fg = colors.bg5, bg = colors.karl3, gui = 'bold'},
+	a = { bg = C.base0E, fg = C.base01, gui = "bold" },
+	b = { bg = C.base00, fg = C.base0E },
 }
 
 M.command = {
-	a = {fg = colors.bg5, bg = colors.mark3, gui = 'bold'},
+	a = { bg = C.base0C, fg = C.base01, gui = "bold" },
+	b = { bg = C.base00, fg = C.base0C },
+}
+
+M.visual = {
+	a = { bg = C.base0F, fg = C.base01, gui = "bold" },
+	b = { bg = C.base00, fg = C.base0F },
+}
+
+M.replace = {
+	a = { bg = C.base0B, fg = C.base01, gui = "bold" },
+	b = { bg = C.base00, fg = C.base0B },
 }
 
 M.inactive = {
-	-- a = {fg = colors.disabled, bg = colors.bg, gui = 'bold'},
-	-- b = {fg = colors.disabled, bg = colors.bg},
-	c = { fg = colors.fg3, bg = colors.bg4 },
+	a = { bg = C.base00, fg = C.base0A },
+	b = { bg = C.base00, fg = C.base03, gui = "bold" },
+	c = { bg = C.base00, fg = C.base04 },
 }
 
 return M
+

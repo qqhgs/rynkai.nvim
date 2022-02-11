@@ -1,12 +1,12 @@
 local M = {}
 
 local default_options = {
-	italics = {
-		functions = false,
-	},
-	disable = {
-		term_colors = false,
-	}
+	config_file = "lua/ryn/plugins/colorscheme.lua",
+	rynkai_dir = vim.fn.stdpath("data") .. "/site/pack/packer/opt/rynkai.nvim/lua/rynkai/colors/",
+	theme = "catppuccin",
+	italic = {},
+	bold = {},
+	term_colors = true,
 }
 
 M.options = {}

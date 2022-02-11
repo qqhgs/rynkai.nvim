@@ -1,7 +1,5 @@
-local M = {}
-
-M.setup = function(opts)
+local setup = function(opts)
 	require("rynkai.config").setup(opts)
 end
 
-return M
+return { setup = setup }

@@ -19,6 +19,7 @@ M.highlight = function(groupName, colors)
 	table.insert(groups, sp)
 
 	vim.api.nvim_command("hi! " .. table.concat(groups, " "))
+  if colors.link then vim.cmd("highlight! link " .. groupName .. " " .. colors.link) end
 end
 
 M.load = function()
@@ -34,7 +35,7 @@ M.load = function()
 	async = vim.loop.new_async(vim.schedule_wrap(function()
 		local plugins = theme.setPlugins()
 
-		if config.disable.term_colors == false then
+		if config.term_colors == false then
 			theme.setTerminal()
 		end
 
@@ -45,13 +46,18 @@ M.load = function()
 		async:close()
 	end))
 
+	local editor = theme.setEditor()
+	for group, colors in pairs(editor) do
+		M.highlight(group, colors)
+	end
+
 	local syntax = theme.setSyntax()
 	for group, colors in pairs(syntax) do
 		M.highlight(group, colors)
 	end
 
-	local editor = theme.setEditor()
-	for group, colors in pairs(editor) do
+	local treesitter = theme.setTreesitter()
+	for group, colors in pairs(treesitter) do
 		M.highlight(group, colors)
 	end
 
