@@ -1,15 +1,14 @@
 local fn = require("rynkai.fn")
 
 local palette = {
-	bg 			= "#1a212e",
-	accent 	= "#81A1C1",
-	blue 		= "#61a3de",
-	red 		= "#f65866",
-	orange 	= "#ea8912",
-	yellow 	= "#ebc275",
-	green 	= "#8bcd5b",
+	bg 			= "#282c34",
+	accent 	= "#c2c7d0",
+	blue 		= "#61afef",
+	red 		= "#e06c75",
+	orange 	= "#d19a66",
+	yellow 	= "#e5c07b",
+	green 	= "#98c379",
 	purple 	= "#c678dd",
-
 }
 
 local schemes = fn.set_schemes(palette)
