@@ -1,4 +1,4 @@
-local theme_switcher = function(opts)
+local function colorscheme_switcher(opts)
 	local pickers, finders, previewers, actions, action_state, utils, conf
 	if pcall(require, "telescope") then
 		pickers = require("telescope.pickers")
@@ -110,7 +110,7 @@ local present, telescope = pcall(require, "telescope")
 if present then
 	return telescope.register_extension({
 		exports = {
-			themes = theme_switcher,
+			rynkai = colorscheme_switcher,
 		},
 	})
 else

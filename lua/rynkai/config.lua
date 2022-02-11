@@ -1,9 +1,9 @@
 local M = {}
 
 local default_options = {
-	config_file = "lua/ryn/plugins/colorscheme.lua",
-	rynkai_dir = vim.fn.stdpath("data") .. "/site/pack/packer/opt/rynkai.nvim/lua/rynkai/colors/",
 	theme = "catppuccin",
+	config_file = "lua/colorscheme.lua",
+	rynkai_dir = vim.fn.stdpath("data") .. "/site/pack/packer/start/rynkai.nvim/lua/rynkai/colors/",
 	italic = {},
 	bold = {},
 	term_colors = true,
