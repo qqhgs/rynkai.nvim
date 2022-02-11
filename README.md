@@ -10,7 +10,7 @@ This variation doesn't follow any theme creation rules, even with the colorschem
 
 There is some flavour for now. `ayu`, `catpuccin`, `gruvbox`, `tokyonight` and more. Check on `colors` dir.
 
-<details><summary>Showcase <b>(Click to expand!)</b></summary>
+<details><summary>Other flavours <b>(Click to expand!)</b></summary>
 
 `Catppuccin`
 ![catpuccin](./assets/catpuccin.jpg)
@@ -24,6 +24,9 @@ There is some flavour for now. `ayu`, `catpuccin`, `gruvbox`, `tokyonight` and m
 ![onedark](./assets/onedark.jpg)
 
 </details>
+
+# Colors switcher with telescope
+https://user-images.githubusercontent.com/68727994/153662125-eedb026c-dc69-4419-a88e-fcd32fb769ca.mp4
 
 *** Credits for all creator of all colorscheme.
 
