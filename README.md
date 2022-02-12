@@ -1,7 +1,7 @@
 # Rynkai, ... for now 
 > This plugins is for my neovim config. But you can use it if you set some dafault value to suit yout personal configs.
 
-This variation doesn't follow any theme creation rules, even with the colorscheme. For now `rynkai` just have one flavour. Will add if have another, or you make it and let me taste what you like.
+This variation doesn't follow any theme creation rules, even with the colorscheme. For now `rynkai` just have some flavour. Will add if have another, or you make it and let me taste what you like.
 
 ## Flavours
 
@@ -86,7 +86,7 @@ require("rynkai").setup({
 `config_file` and `rynkai_dir` exist for working with telescope extensions function.
 * The function is search this path, find line with `theme = "blabla"` then `blabla` will be replace with new string. So your setup must have `theme = "blabla"` line too.
 * Change this value to suit yout plugins manager. The function will grep all colors then bring to telescope pickers.
-* You need to call the extensions from your telescope config file. after that you can run `Telescope rynkai`
+* You need to call the telescope extensions from your config file. after that you can run `Telescope rynkai`
 
 This is how i use it on my configs.
 ```lua
@@ -115,8 +115,8 @@ Basicly, we use base16. But rynkai use hsluv function to set the brightness of b
 So can we say that this base8? idk. `bg` will be base for any background. `accent` will be base for foreground. Feel free to browse this repo and make fork.
 
 # Todo
+- [ ] Improve syntax highlighting
 - [ ] Refactor
-- [ ] Improve
 - [ ] Add more features
 - [ ] Add more flavour
 - [ ] Build awesome README
