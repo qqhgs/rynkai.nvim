@@ -388,11 +388,17 @@ M.setPlugins = function()
 		BufferLineCloseButtonSelected = { fg = C.base0B, bg = C.base01 },
 		-- diagnostics
 		BufferLineHint = { fg = C.base04, bg = C.base02 }, -- others
+		BufferLineHintVisible = { fg = C.base04, bg = C.base03 }, -- others
 		BufferLineHintDiagnostic = { fg = C.base04, bg = C.base02 }, -- others
+		BufferLineHintDiagnosticVisible = { fg = C.base04, bg = C.base03 }, -- others
 		BufferLineInfo = { fg = C.base04, bg = C.base02 }, -- others
+		BufferLineInfoVisible = { fg = C.base04, bg = C.base03 }, -- others
 		BufferLineInfoDiagnostic = { fg = C.base04, bg = C.base02 }, -- others
-		BufferLineWarn = { fg = C.base04, bg = C.base02 }, -- others
-		BufferLineWarnDiagnostic = { fg = C.base04, bg = C.base02 }, -- others
+		BufferLineInfoDiagnosticVisible = { fg = C.base04, bg = C.base03 }, -- others
+		BufferLineWarning = { fg = C.base04, bg = C.base03 }, -- others
+		BufferLineWarningVisible = { fg = C.base04, bg = C.base03 }, -- others
+		BufferLineWarningDiagnostic = { fg = C.base04, bg = C.base02 }, -- others
+		BufferLineWarningDiagnosticVisible = { fg = C.base04, bg = C.base03 }, -- others
 		BufferLineError = { fg = C.base0B, bg = C.base02 }, -- others
 		BufferLineErrorVisible = { fg = C.base04, bg = C.base03 }, -- others
 		BufferLineErrorDiagnostic = { fg = C.base04, bg = C.base02 }, -- others
