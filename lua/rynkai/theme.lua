@@ -452,6 +452,9 @@ M.setPlugins = function()
 		TelescopeSelectionCaret = { fg = C.base08 },
 		TelescopeSelection = { fg = C.base07, bg = C.base02, style = "bold" },
 		TelescopeMatching = { fg = C.base0A },
+		TelescopePromptTitle = { fg = C.bg, bg = C.base0A },
+		TelescopeResultsTitle = { fg = C.bg, bg = C.base0C },
+		TelescopePreviewTitle = { fg = C.bg, bg = C.base0E },
 
 		-- Gitsigns
 		GitSignsAdd = { fg = C.base0E, bg = C.base01 }, -- diff mode: Added line |diff.txt|
