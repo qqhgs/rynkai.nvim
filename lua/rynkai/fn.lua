@@ -107,7 +107,7 @@ M.change_theme = function(current_theme, new_theme)
 		return
 	end
 
-	local file = vim.fn.stdpath("config") .. "/" .. defaults.config_file
+	local file = defaults.config_file
 
 	-- store in data variable
 	local data = assert(M.file("r", file))
@@ -151,7 +151,7 @@ end
 M.list_themes = function(return_type)
 	local themes = {}
 	-- folder where theme files are stored
-	local themes_folder = vim.fn.stdpath("data") .. defaults.rynkai_dir
+	local themes_folder = defaults.rynkai_dir
 	-- list all the contents of the folder and filter out files with .lua extension, then append to themes table
 	local fd = vim.loop.fs_scandir(themes_folder)
 	if fd then
